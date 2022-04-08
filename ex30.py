@@ -29,7 +29,4 @@ Exercise Notes for ex30: Else and If
 2. elif and else are "else if" and "else" statments
    that provide alternative statements to the first
    boolean if-statement
-3. 
-   
-
 '''
