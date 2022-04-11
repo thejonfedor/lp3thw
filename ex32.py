@@ -47,4 +47,9 @@ Exercise Notes for ex32: Loops and Lists
    And then filling it with values using a loop and the
    emptyList.append(var) function
    Suuuuper clutch and helpful
+5. EXCELLENT resources:
+   -Google Developer Education resource on Python lists:
+   https://developers.google.com/edu/python/lists
+   -Python documentation on the lists data structure:
+   https://docs.python.org/3/tutorial/datastructures.html
 '''
