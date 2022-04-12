@@ -1,25 +1,37 @@
-# I'll need to import stuff (argv stuff I think?)
+# I needed the randint() function so I imported random
+# not actually sure if I needed to or not
+import random
 
-# plan out vars needed
-i = 0
+# create empty list
 numbers = []
+# get number from user for size of list we'll create
+num = input("What size should the list be? >> ")
+# convert that str into type int
+listSize = int(num)
 
-# MISSION: refactor while-loop into a function per study drills
+# helps the user follow along
+print("The max number is :", num)
 
-while i < 6:
-    print(f"At the top i is {i}")
-    numbers.append(i)
+# refactored the previous while-loop into a function
+# function has one parameter: integer 'size'
+# 'size' is defined by the user from the command line
+def main(size):
+    for i in range(0, size):
+        val = random.randint(1,100)
+        numbers.append(val)
 
-    i = i + 1
-    print("Numbers now: ", numbers)
-    print(f"At the bottom i is {i}")
-    print("----------") # added for clarity when running
-
+# call the new function I wrote
+main(listSize)
 
 print("The numbers: ")
 
+# modified this too so you can see the val of each 
+# index in the list
 for num in numbers:
-    print(num)
+    print(numbers.index(num), "Value: ", num)
+
+# view entire list
+print(f"Here are all the list values: ", numbers)
 
 '''
 Exercise Notes for ex33refactor: While Loops
