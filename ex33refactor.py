@@ -10,7 +10,7 @@ num = input("What size should the list be? >> ")
 listSize = int(num)
 
 # helps the user follow along
-print("The max number is :", num)
+print("The max number is :", listSize)
 
 # refactored the previous while-loop into a function
 # function has one parameter: integer 'size'
