@@ -79,7 +79,7 @@ def start():
     else:
         dead("You stumble around the room until you starve.")
 
-
+# program starts running here. Important to know for debug
 start()
 
 
@@ -90,7 +90,13 @@ Exercise Notes for ex35: Branches and Functions
    - had a big problem with definining functions
      ended up incorrectly tabbing the 'def's such that the
      functions didn't end up intializing correctly
-2. I can't seem to get the gold_room() function to trip
+2. SOLVED: I can't seem to get the gold_room() function to trip
    the 'Nice person' condition
-3. adsf
+3. For debugging and error handling I literally just
+   ripped off the python.org code from the link below:
+   https://docs.python.org/3/tutorial/errors.html#handling-exceptions
+4. Also, I used the debugger in VS Code *extensively* while
+   working through the Study Drills. SUPER. HELPFUL. DANG.
+   Works very similarly to the script debugger packaged with
+   Filemaker Pro (RIP).
 '''
