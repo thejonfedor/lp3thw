@@ -3,16 +3,19 @@ from sys import exit
 def gold_room():
     print("This room is full of gold. How much do you take?")
 
-    choice = input("> ")
-    if "0" in choice or "1" in choice:
-        how_much = int(choice)
-    else:
-        dead("Man, learn to type a number.")
-    # NEED TO FIX:
-    # these two if-statements conflict with each other
-    # the hierarchy from top to bottom results in errors while
-    # running this game script
-    if how_much < 50:
+    # ADDED an error-catching while loop to ensure the player
+    # is entering an integer number for the amount of
+    # gold to take
+
+    while True:
+        try:
+            choice = input("> ")
+            choiceInt = int(choice)
+            break
+        except ValueError:
+            print(f"Enter an integer number, fool.")
+ 
+    if choiceInt < 50:
         print("Nice, you're not greedy, you win!")
         exit(0)
     else:
