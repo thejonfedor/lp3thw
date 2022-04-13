@@ -8,7 +8,10 @@ def gold_room():
         how_much = int(choice)
     else:
         dead("Man, learn to type a number.")
-    
+    # NEED TO FIX:
+    # these two if-statements conflict with each other
+    # the hierarchy from top to bottom results in errors while
+    # running this game script
     if how_much < 50:
         print("Nice, you're not greedy, you win!")
         exit(0)
@@ -37,7 +40,7 @@ def bear_room():
         elif choice == "open door" and bear_moved:
             gold_room()
         else:
-            print("I got no idea what that means.")
+            print("I got no idea what that means. Try again.")
     
 
 def cthulhu_room():
