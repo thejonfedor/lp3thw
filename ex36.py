@@ -5,7 +5,7 @@
 from sys import exit
 
 def dead(reason):
-    print(reason, "Oy vey.")
+    print(reason, "Oy vey. \n")
     exit(0)
 
 def start():
@@ -25,7 +25,7 @@ def start():
         # link to still other different function
         i = 3
     else:
-        print("REALLY? ", choice, "? Okay, well...")
+        print("\nREALLY? ", choice, "? Okay, well... \n")
         print("You lay back down in the bed.")
         print("Shortly, a wizard enters the room and casts a spell on you.")
         print("You fall asleep very deep and never wake again.")
