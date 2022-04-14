@@ -3,10 +3,23 @@
 # as possible." Probably won't. But I'll make something'
 
 from sys import exit
+import random
 
 def dead(reason):
     print(reason, "Oy vey. \n")
     exit(0)
+
+def window():
+    fate = random.randint(0,2)
+
+    if fate == 0:
+        print("\nThe window breaks as you open it.")
+        print("You fall to your death")
+        dead("\nBad luck.")
+    elif fate == 1:
+        print("\nYou open the window and climb down the ladder")
+    elif fate == 2:
+        print("Jump out of the window and land on an angry elf.")
 
 def start():
     print("You wake up in a warm, soft bed.")
@@ -22,8 +35,7 @@ def start():
         # link to more different function
         i = 2
     elif choice == "window":
-        # link to still other different function
-        i = 3
+        window()
     else:
         print("\nREALLY? ", choice, "? Okay, well... \n")
         print("You lay back down in the bed.")
