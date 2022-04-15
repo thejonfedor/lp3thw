@@ -2,7 +2,6 @@
 # Zed says to "spend a week making it as interesting
 # as possible." Probably won't. But I'll make something'
 
-from pickle import TRUE
 from sys import exit
 import random, time
 
@@ -10,19 +9,46 @@ def dead(reason):
     print(reason, "Oy vey. \n")
     exit(0)
 
+def dungeon():
+    print("You land in a dark, dank dungeon.")
+
+def cloud():
+    print("\nThis is the cloud function.")
+
 def grass(landing):
+    
+    if landing == "elf":
+        print("\nThe elf is angry and injured.")
+        print("It points at you, snaps its fingers, and you land")
+        print("back in the room you started, asleep, in bed...")
+        time.sleep(2)
+        angryElf = "yes"
+        start()
+    else:
+        print("\nThere's a shiny crytal laying in the grass.")
+    
+    i = 0
 
     while True:
-        
-        if landing == "elf":
-            print("\nThe elf is angry and injured.")
-            print("It points at you, snaps its fingers, and you land")
-            print("back in the room you started, asleep, in bed...")
+        crystalChoice = input("> ")
+
+        if "pick" and "up" in crystalChoice:
+            print("\nPower courses through your hands and arms.")
+            print("You begin rising into the air toward a floating cloud.")
+            break
+            cloud()
+        elif "kick it" in crystalChoice:
+            print("\nThe crytal turns blood red.")
             time.sleep(2)
-            angryElf = TRUE
-            start()
-        else landing == "soft":
-            print("There's a shiny crytal laying in the grass.")
+            print("It starts to vibrate violently.")
+            time.sleep(2)
+            print("Then disappears. And a trap door opens under your feet.")
+            break
+            dungeon()
+        elif i == 3:
+            print("\nYou should probably kick it or pick it up.")
+        else:
+            i = i + 1        
 
 
 def window():
