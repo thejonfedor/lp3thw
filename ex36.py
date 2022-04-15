@@ -5,15 +5,19 @@
 from sys import exit
 import random, time
 
+def bigDarkPlace():
+    print("\nYou land in a dark, dank dungeon.")
+    print("You have no hope of surviving. Goodbye.")
+    dead()
+
+def cloudCity():
+    print("\nThis is the cloud function.")
+    print("You have no hope of surviving. Goodbye.")
+    dead("Because cloud city probz.")
+
 def dead(reason):
     print(reason, "Oy vey. \n")
     exit(0)
-
-def dungeon():
-    print("You land in a dark, dank dungeon.")
-
-def cloud():
-    print("\nThis is the cloud function.")
 
 def grass(landing):
     
@@ -35,21 +39,18 @@ def grass(landing):
         if "pick" and "up" in crystalChoice:
             print("\nPower courses through your hands and arms.")
             print("You begin rising into the air toward a floating cloud.")
-            break
-            cloud()
+            cloudCity()
         elif "kick it" in crystalChoice:
             print("\nThe crytal turns blood red.")
             time.sleep(2)
-            print("It starts to vibrate violently.")
+            print("It starts to vibrate violently. Then disappears.")
             time.sleep(2)
-            print("Then disappears. And a trap door opens under your feet.")
-            break
-            dungeon()
+            print("A trap door opens under your feet.")
+            bigDarkPlace()
         elif i == 3:
             print("\nYou should probably kick it or pick it up.")
         else:
             i = i + 1        
-
 
 def window():
     fate = random.randint(0,3)
