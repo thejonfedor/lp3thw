@@ -7,8 +7,7 @@ import random, time
 
 def bigDarkPlace():
     print("\nYou land in a dark, dank dungeon.")
-    print("You have no hope of surviving. Goodbye.")
-    dead()
+    dead("You have no hope of surviving. Goodbye.")
 
 def cloudCity():
     print("\nThis is the cloud function.")
@@ -19,6 +18,10 @@ def dead(reason):
     print(reason, "Oy vey. \n")
     exit(0)
 
+def front():
+    print("\nYou arrive at the front of the building.")
+    print("An armed and angry-looking minotaur stands guard.")
+
 def grass(landing):
     
     if landing == "elf":
@@ -26,8 +29,23 @@ def grass(landing):
         print("It points at you, snaps its fingers, and you land")
         print("back in the room you started, asleep, in bed...")
         time.sleep(2)
-        angryElf = "yes"
+        angryElf = True
         start()
+    elif landing == "hard":
+        injured = True
+        print("\nAs you land you hear something snap. Much pain.")
+        print("Do you call for help or crawl for a while?")
+        injuredChoice = input("> ")
+
+        while True:
+            if injuredChoice == "crawl":
+                print("\nYou crawl through the grass for a while.")
+                print("You eventually find a shiney crystal laying in the grass.")
+                break
+            elif injuredChoice == "call for help":
+                print("\nYou call for help and alert enemies nearby to your presence.")
+                print("Restless group of scurvy dwarves carries you away to a dungeon.")
+                bigDarkPlace("dwarves")
     else:
         print("\nThere's a shiny crytal laying in the grass.")
     
@@ -36,10 +54,17 @@ def grass(landing):
     while True:
         crystalChoice = input("> ")
 
-        if "pick" and "up" in crystalChoice:
+        if "pick" and "up" in crystalChoice and not injured:
             print("\nPower courses through your hands and arms.")
             print("You begin rising into the air toward a floating cloud.")
             cloudCity()
+        elif "pick" and "up" in crystalChoice and injured:
+            print("\nPower courses through your arms.")
+            print("You ask the crystal to heal your injured legs.")
+            time.sleep(2)
+            print("You're healed! Such wow. Much amaze.")
+            injured = False
+            front()
         elif "kick it" in crystalChoice:
             print("\nThe crytal turns blood red.")
             time.sleep(2)
@@ -57,8 +82,8 @@ def window():
 
     if fate == 0:
         print("\nThe window breaks as you open it.")
-        print("You fall to your death...")
-        dead("\nBad luck.")
+        print("You fall to the ground below.")
+        grass("hard")
     elif fate == 1:
         print("\nYou open the window and climb down the ladder")
         grass("soft")
