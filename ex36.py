@@ -21,6 +21,7 @@ def dead(reason):
 def front():
     print("\nYou arrive at the front of the building.")
     print("An armed and angry-looking minotaur stands guard.")
+    dead("The minotaur stuck you. Instant death.")
 
 def grass(landing):
     
@@ -36,16 +37,14 @@ def grass(landing):
         print("\nAs you land you hear something snap. Much pain.")
         print("Do you call for help or crawl for a while?")
         injuredChoice = input("> ")
-
-        while True:
-            if injuredChoice == "crawl":
-                print("\nYou crawl through the grass for a while.")
-                print("You eventually find a shiney crystal laying in the grass.")
-                break
-            elif injuredChoice == "call for help":
-                print("\nYou call for help and alert enemies nearby to your presence.")
-                print("Restless group of scurvy dwarves carries you away to a dungeon.")
-                bigDarkPlace("dwarves")
+        
+        if injuredChoice == "crawl":
+            print("\nYou crawl through the grass for a while.")
+            print("You eventually find a shiny crystal laying in the grass.")
+        elif injuredChoice == "call for help":
+            print("\nYou call for help and alert enemies nearby to your presence.")
+            print("Restless group of scurvy dwarves carries you away to a dungeon.")
+            bigDarkPlace("dwarves")
     else:
         print("\nThere's a shiny crytal laying in the grass.")
     
@@ -63,14 +62,22 @@ def grass(landing):
             print("You ask the crystal to heal your injured legs.")
             time.sleep(2)
             print("You're healed! Such wow. Much amaze.")
+            print("You start walking.")
             injured = False
             front()
-        elif "kick it" in crystalChoice:
+        elif "kick it" in crystalChoice and not injured:
             print("\nThe crytal turns blood red.")
             time.sleep(2)
             print("It starts to vibrate violently. Then disappears.")
             time.sleep(2)
             print("A trap door opens under your feet.")
+            bigDarkPlace()
+        elif "kick it" in crystalChoice and injured:
+            print("\nThe crytal turns blood red.")
+            time.sleep(2)
+            print("It starts to vibrate violently. Then disappears.")
+            time.sleep(2)
+            print("A trap door opens under you. You fall into the dark.")
             bigDarkPlace()
         elif i == 3:
             print("\nYou should probably kick it or pick it up.")
@@ -78,7 +85,11 @@ def grass(landing):
             i = i + 1        
 
 def window():
-    fate = random.randint(0,3)
+    if dreaming == 0:
+        # if player already fell in the dreams, that doesn't happen again
+        fate = random.randint(0,2)
+    else:
+        fate = random.randint(0,3)
 
     if fate == 0:
         print("\nThe window breaks as you open it.")
@@ -93,8 +104,10 @@ def window():
     elif fate == 3:
         print("\nThe window breaks as you open it.")
         print("You fall to your death...in your DREAMS")
+        time.sleep(2)
         print("\nWhew - Good luck!")
         time.sleep(2)
+        dreaming = 0
         start()
 
 def start():
@@ -119,7 +132,7 @@ def start():
         time.sleep(4) # suspense
         print("Shortly, a wizard enters the room and casts a spell on you.")
         print("You fall into a very deep sleep and never wake again.")
-        time.sleep(3) # more suspense
+        time.sleep(4) # more suspense
         dead("\nYou just got hosed by a puny Wizard. Dead.")
 
 start()
