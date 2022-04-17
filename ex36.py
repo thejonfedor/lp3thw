@@ -21,9 +21,9 @@ def dead(reason):
 def front():
     print("\nYou arrive at the front of the building.")
     print("An armed and angry-looking minotaur stands guard.")
-    dead("The minotaur stuck you. Instant death.")
+    dead("\nThe minotaur stuck you. Instant death.")
 
-def grass(landing,dreaming):
+def grass(landing,dreaming,injured):
     
     if landing == "elf": 
         print("\nThe elf is angry and injured.")
@@ -32,7 +32,7 @@ def grass(landing,dreaming):
         time.sleep(2)
         angryElf = True
         dreaming = 0
-        start(dreaming)
+        start(dreaming,injured)
     elif landing == "hard":
         injured = True
         print("\nAs you land you hear something snap. Much pain.")
@@ -45,7 +45,7 @@ def grass(landing,dreaming):
         elif injuredChoice == "call for help":
             print("\nYou call for help and alert enemies nearby to your presence.")
             print("Restless group of scurvy dwarves carries you away to a dungeon.")
-            bigDarkPlace("dwarves")
+            bigDarkPlace()
     else:
         print("\nThere's a shiny crytal laying in the grass.")
     
@@ -85,32 +85,35 @@ def grass(landing,dreaming):
         else:
             i = i + 1        
 
-def window(dreaming):
+def window(dreaming,injured):
     if dreaming == 0:
         # if player already fell in the dreams, that doesn't happen again
-        fate = random.randint(0,2)
+        fate = random.randint(0,1)
     else:
         fate = random.randint(0,3)
 
     if fate == 0:
         print("\nThe window breaks as you open it.")
         print("You fall to the ground below.")
-        grass("hard", dreaming)
+        grass("hard", dreaming,injured)
     elif fate == 1:
         print("\nYou open the window and climb down the ladder")
-        grass("soft", dreaming)
+        grass("soft", dreaming,injured)
     elif fate == 2:
         print("\nJump out of the window and land on an angry elf.")
-        grass("elf", dreaming)
+        grass("elf", dreaming,injured)
     elif fate == 3:
         print("\nThe window breaks as you open it.")
         print("You fall to your death...in your DREAMS")
         time.sleep(2)
         print("\nWhew - Good luck!")
         time.sleep(2)
-        start(0)
+        start(0,injured)
+    else:
+        print("Something went wrong and you wake up back in bed.")
+        start(0,injured)
 
-def start(dreaming):
+def start(dreaming,injured):
     print("\nYou wake up in a warm, soft bed.")
     print("There are two doors in the room and a window.")
     time.sleep(1)
@@ -125,7 +128,7 @@ def start(dreaming):
         # link to more different function
         i = 2
     elif choice == "window":
-        window(dreaming)
+        window(dreaming,injured)
     else:
         print("\nREALLY? ", choice, "? Okay, well... \n")
         print("You lay back down in the bed.")
@@ -135,7 +138,7 @@ def start(dreaming):
         time.sleep(4) # more suspense
         dead("\nYou just got hosed by a puny Wizard. Dead.")
 
-start(1)
+start(1,False)
 
 '''
 Exercise Notes for ex36: Designing and Debugging
