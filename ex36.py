@@ -23,15 +23,16 @@ def front():
     print("An armed and angry-looking minotaur stands guard.")
     dead("The minotaur stuck you. Instant death.")
 
-def grass(landing):
+def grass(landing,dreaming):
     
-    if landing == "elf":
+    if landing == "elf": 
         print("\nThe elf is angry and injured.")
         print("It points at you, snaps its fingers, and you land")
         print("back in the room you started, asleep, in bed...")
         time.sleep(2)
         angryElf = True
-        start()
+        dreaming = 0
+        start(dreaming)
     elif landing == "hard":
         injured = True
         print("\nAs you land you hear something snap. Much pain.")
@@ -84,7 +85,7 @@ def grass(landing):
         else:
             i = i + 1        
 
-def window():
+def window(dreaming):
     if dreaming == 0:
         # if player already fell in the dreams, that doesn't happen again
         fate = random.randint(0,2)
@@ -94,23 +95,22 @@ def window():
     if fate == 0:
         print("\nThe window breaks as you open it.")
         print("You fall to the ground below.")
-        grass("hard")
+        grass("hard", dreaming)
     elif fate == 1:
         print("\nYou open the window and climb down the ladder")
-        grass("soft")
+        grass("soft", dreaming)
     elif fate == 2:
         print("\nJump out of the window and land on an angry elf.")
-        grass("elf")
+        grass("elf", dreaming)
     elif fate == 3:
         print("\nThe window breaks as you open it.")
         print("You fall to your death...in your DREAMS")
         time.sleep(2)
         print("\nWhew - Good luck!")
         time.sleep(2)
-        dreaming = 0
-        start()
+        start(0)
 
-def start():
+def start(dreaming):
     print("\nYou wake up in a warm, soft bed.")
     print("There are two doors in the room and a window.")
     time.sleep(1)
@@ -125,7 +125,7 @@ def start():
         # link to more different function
         i = 2
     elif choice == "window":
-        window()
+        window(dreaming)
     else:
         print("\nREALLY? ", choice, "? Okay, well... \n")
         print("You lay back down in the bed.")
@@ -135,7 +135,7 @@ def start():
         time.sleep(4) # more suspense
         dead("\nYou just got hosed by a puny Wizard. Dead.")
 
-start()
+start(1)
 
 '''
 Exercise Notes for ex36: Designing and Debugging
