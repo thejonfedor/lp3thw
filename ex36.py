@@ -5,6 +5,9 @@
 from sys import exit
 import random, time
 
+# this was a good idea but I've already programmed this game
+# to look a certain way at the level of each function. Next
+# time I would definitely use a formatter like this though
 def msg (write):
     print("***************************************************")
     print(write)
@@ -27,6 +30,7 @@ def dead(reason):
 def front():
     print("\nYou arrive at the front of the building.")
     print("An armed and angry-looking minotaur stands guard.")
+    
     dead("The minotaur strikes you. Instant death.")
 
 def grass(landing,dreaming,injured):
