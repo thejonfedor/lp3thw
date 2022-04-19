@@ -5,6 +5,12 @@
 from sys import exit
 import random, time
 
+def msg (write):
+    print("***************************************************")
+    print(write)
+    print("***************************************************")
+    return
+
 def bigDarkPlace():
     print("\nYou land in a dark, dank dungeon.")
     dead("You have no hope of surviving. Goodbye.")
@@ -21,7 +27,7 @@ def dead(reason):
 def front():
     print("\nYou arrive at the front of the building.")
     print("An armed and angry-looking minotaur stands guard.")
-    dead("\nThe minotaur stuck you. Instant death.")
+    dead("The minotaur strikes you. Instant death.")
 
 def grass(landing,dreaming,injured):
     
@@ -118,7 +124,7 @@ def start(dreaming,injured):
     print("There are two doors in the room and a window.")
     time.sleep(1)
     print("Go through the left door, right door, or window.")
-
+    
     choice = input("> ")
 
     if choice == "left door":
