@@ -1,13 +1,19 @@
 from io import StringIO
 import sys
 
+# initial string to work with and use as a source for the list
 ten_things = "Apples Oranges Crows Telephone Light Sugar"
 
+# output for the user
 print("Wait there are not 10 things in that list. Let's fix that.")
 
+# define a new list 'stuff' comprised of the contents of ten_things
 stuff = ten_things.split(' ')
+
+# showing the newly-created list to the user in the command line
 print("This is stuff: ", stuff)
 
+# function to get the length of the stdout-printed list, 'stuff'
 def listLength(list):
 
     old_stdout = sys.stdout
