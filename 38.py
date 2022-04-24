@@ -1,8 +1,36 @@
+from io import StringIO
+import sys
+
 ten_things = "Apples Oranges Crows Telephone Light Sugar"
 
 print("Wait there are not 10 things in that list. Let's fix that.")
 
 stuff = ten_things.split(' ')
+print("This is stuff: ", stuff)
+# listLen = sum(len(i) for i in stuff)
+
+old_stdout = sys.stdout
+
+result = StringIO()
+sys.stdout = result
+
+print(stuff)
+
+listLen = result.getvalue()
+
+sys.stdout = old_stdout
+
+print("This is listLen: ", listLen)
+newListLen = len(listLen)
+print("listLen is this many chars long: ", newListLen)
+
+stars = "*" * newListLen
+print("\n")
+print(stars)
+print(stuff)
+print(stars)
+print("\n")
+
 more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
 
 
