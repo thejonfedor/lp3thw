@@ -15,51 +15,76 @@ print("This is stuff: ", stuff)
 
 # function to get the length of the stdout-printed list, 'stuff'
 def listLength(list):
-
+    # capture stdout output in variable. This removes it from the view of
+    # the user. So the printing etc happens in the background
     old_stdout = sys.stdout
-
+    # var to capture output from the StringIO() method
     result = StringIO()
+    # set output equal to the value of result, StringIO()
     sys.stdout = result
-
+    # print the list whose character size we want to measure
+    # print as IF it's on the cmd line but it's actually in background
     print(list)
-
+    # set listLen equal to the string printed "on screen"
+    # VERSUS just using len() to measure the chars of the values in the list
     listLen = result.getvalue()
-
+    # "turn back on" printing output to the user-visible cmd line
     sys.stdout = old_stdout
-
+    # print listLen - user will see it now
     print("This is listLen: ", listLen)
+    # NOW measure the character count of the listLen
     newListLen = len(listLen)
+    # send value of function back to script where it was called
     return newListLen
 
+# set value of listLen2 var to the output of the listLength() function
 listLen2 = listLength(stuff)
-
+# print out character-length of the PRINTED list
 print("listLen is this many chars long: ", listLen2)
-
-stars = "-" * listLen2
+# create a string of dashes equal to the length of the printed list
+# use for separation in the cmd line
+dashes = "-" * listLen2
+# print carriage return for separation
 print("\n")
+# tell the user what they're seeing
 print("These are the contents of list, stuff:")
-print(stars)
+# print the separation line of dashes
+print(dashes)
+# print the contents of the list (SHEESH...finally)
 print(stuff)
-print(stars)
+# print more dashes for separation
+print(dashes)
+# one more carriage return for "whitespace"
 print("\n")
-
+# create a new source list we'll use further below
 more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
 
-
+# intiate while loop - while length of stuff list is NOT equal to 10
 while len(stuff) != 10:
+    # grab the value from the end of the more_stuff list
     next_one = more_stuff.pop()
+    # tell user what we're adding to list, stuff
     print("Adding: ", next_one)
+    # add the item to list, stuff
     stuff.append(next_one)
+    # tell the user how many items are NOW in list, stuff
     print(f"There are {len(stuff)} items now.")
 
+# print out final value of list, stuff
 print("There we go: ", stuff)
 
+# tell the user we're doing more cool stuff
 print("Let's do some things with stuff.")
 
+# print the second item in list, stuff
 print(stuff[1])
+# will ALSO print the LAST item in list, stuff
 print(stuff[-1]) # whoa! fancy
+# remove the last item off the end of list, stuff
 print(stuff.pop())
+# prints list of items without the list syntax (brackets, commas, etc)
 print(' '.join(stuff)) # what the... Cool!
+# did something else...looking into it hahah
 print('#'.join(stuff[3:5])) 
 
 '''
