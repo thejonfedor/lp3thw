@@ -71,10 +71,11 @@ while len(stuff) != 10:
     print(f"There are {len(stuff)} items now.")
 
 # print out final value of list, stuff
-print("There we go: ", stuff)
+print("There we go, here's list, stuff: ", stuff)
+print("Here's list, more_stuff: ", more_stuff)
 
 # tell the user we're doing more cool stuff
-print("Let's do some things with stuff.")
+print("Let's do some things with stuff.\n")
 
 # print the second item in list, stuff
 print(stuff[1])
@@ -82,9 +83,12 @@ print(stuff[1])
 print(stuff[-1]) # whoa! fancy
 # remove the last item off the end of list, stuff
 print(stuff.pop())
+
+print("\nUpdated contents of list, stuff: ", stuff)
 # prints list of items without the list syntax (brackets, commas, etc)
 print(' '.join(stuff)) # what the... Cool!
-# did something else...looking into it hahah
+# prints list items 3 and 4 with asterisk in between
+# the range [3:5] does NOT include element 5
 print('#'.join(stuff[3:5])) 
 
 '''
