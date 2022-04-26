@@ -60,7 +60,23 @@ if not state:
 city = cities.get('TX', 'Does Not Exist')
 print(f"The city for the state 'TX' is: {city}")
 
+print(f"\n", cities)
+
+print(f"\n", states)
+
+# plain old list of keys in dict, states
+print(f"\n", list(states.items()))
+
+print(' '.join(cities))
+
+# get individual keys and values in a comma-separated list
+print("--These are keys:", ', '.join(cities.keys()), "\n--These are values:", ', '.join(cities.values()))
+
 '''
 Exercise Notes for ex39: Dictionaries, Oh Lovely Dictionaries
-1. Something new
+1. Dicts are pretty cool. Looks a lot like JSON.
+   I looked it up and JSON *looks* similar to dict data type
+   But dict is a data STRUCTURE deeply embedded in Python vs
+   JSON is just a way to represent / store data in a text file
+2. 
 '''
