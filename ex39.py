@@ -78,5 +78,7 @@ Exercise Notes for ex39: Dictionaries, Oh Lovely Dictionaries
    I looked it up and JSON *looks* similar to dict data type
    But dict is a data STRUCTURE deeply embedded in Python vs
    JSON is just a way to represent / store data in a text file
-2. 
+2. OrderedDict objects look pretty cool. Need to do some practice working
+   with them and implementing them
+   https://docs.python.org/3/library/collections.html#ordereddict-objects 
 '''
