@@ -23,7 +23,8 @@ mm = Song(["Well the FCC",
            "But it feels so empty",
            "WITHOUT ME."])
 
-coldPlay = "I hear Jerusalem bells are ringing, Roman cavalry choirs are singing."
+coldPlay = ["I hear Jerusalem bells are ringing", 
+            "Roman cavalry choirs are singing."]
 
 happy_bday.sing_me_a_song()
 
@@ -33,3 +34,5 @@ mm.sing_me_a_song()
 # this doesn't work but I'm unsure why
 # error says the 'str' object has no attribute, sing_me_a_song()
 coldPlay.sing_me_a_song()
+# the below DOES work in that it prints but not using class, Song
+print(coldPlay)
