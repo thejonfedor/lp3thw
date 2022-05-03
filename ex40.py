@@ -36,3 +36,11 @@ mm.sing_me_a_song()
 coldPlay.sing_me_a_song()
 # the below DOES work in that it prints but not using class, Song
 print(coldPlay)
+
+'''
+Notes for Exercise 40: Modules, Classes, and Objects
+1. I still don't really understand why the
+   def__init__() function is necessary in the class
+   Need to investigate further. Possibly on YouTube?
+2. asdf
+'''
