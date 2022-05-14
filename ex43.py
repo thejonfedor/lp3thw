@@ -12,7 +12,7 @@ class Engine(object):
     def play(self):
         pass
 
-class Death(scene):
+class Death(Scene):
 
     def enter(self):
         pass
