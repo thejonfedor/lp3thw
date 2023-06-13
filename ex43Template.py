@@ -1,5 +1,8 @@
-# If I need to start over, use ex43Template.py
-# The structure's already there
+# this code is the structure template for
+# Gorthons from Planet Percal 25. It's the starting
+# point provided by Zed to be expanded on and developed
+# by the reader. Use this template if I need a clean-slate
+# restart on the exercise.
 
 class Scene(object):
 
