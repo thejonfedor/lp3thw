@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Carina",
+                "last": "Bratvold"
+            },
+            "location": {
+                "street": {
+                    "number": 289,
+                    "name": "Lind\u00f8ya"
+                },
+                "city": "Hommelst\u00f8",
+                "state": "Oppland",
+                "country": "Norway",
+                "postcode": "0215",
+                "coordinates": {
+                    "latitude": "43.1360",
+                    "longitude": "142.7898"
+                },
+                "timezone": {
+                    "offset": "+1:00",
+                    "description": "Brussels, Copenhagen, Madrid, Paris"
+                }
+            },
+            "email": "carina.bratvold@example.com",
+            "login": {
+                "uuid": "21270849-cc6d-414d-84a1-521e55e0a51a",
+                "username": "beautifulfrog232",
+                "password": "ning",
+                "salt": "Vx1gp1rp",
+                "md5": "195139b6f98bb554eef1682793938b7e",
+                "sha1": "624807f33db278463e31e00b8f75990d5871a90d",
+                "sha256": "54e341e29be3d845cd559c43a107e655bc38cd0afb448700a3b9d96f99660ff3"
+            },
+            "dob": {
+                "date": "1949-10-06T11:05:01.885Z",
+                "age": 73
+            },
+            "registered": {
+                "date": "2020-09-26T13:24:20.617Z",
+                "age": 2
+            },
+            "phone": "59063163",
+            "cell": "97665465",
+            "id": {
+                "name": "FN",
+                "value": "06104937444"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/36.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/36.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/36.jpg"
+            },
+            "nat": "NO"
+        }
+    ],
+    "info": {
+        "seed": "b3c32d2c8f2ed824",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}
