@@ -20,13 +20,13 @@ while True:
     if afk_counter > 5:
         x = random.randint(400,1800)    
         y = random.randint(200,900)
-        moveTime = round(random.uniform(0.1,1.5),1)
+        moveTime = round(random.uniform(0.1,.7),1)
         sleepTime = random.randint(1,7)
         gui.moveTo(x, y, moveTime)
         xy = f"-- Positions X: {x} and Y: {y} and Move Time: {moveTime} and Sleep Time: {sleepTime}"
         cursor_coordinates = gui.position()
     
-    if afk_counter > 0 and afk_counter % 15 == 0:
+    if afk_counter > 0 and afk_counter % 5 == 0:    
         gui.hotkey('command', 'tab')
 
     print(f'AFK Counter: {afk_counter} {xy}')
