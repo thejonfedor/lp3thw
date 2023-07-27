@@ -14,5 +14,5 @@ jsonFormat = json.dumps(parsed, indent = 4)
 
 print(jsonFormat)
 
-with open('jsonResponse.txt', 'w') as output:
+with open('jsonResponse.json', 'w') as output:
     output.write(jsonFormat)
