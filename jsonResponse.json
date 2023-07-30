@@ -1,0 +1,68 @@
+
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Demy",
+                "last": "Huijser"
+            },
+            "location": {
+                "street": {
+                    "number": 1533,
+                    "name": "Bamestraweg"
+                },
+                "city": "Rijnwaarden",
+                "state": "Gelderland",
+                "country": "Netherlands",
+                "postcode": "2597 PS",
+                "coordinates": {
+                    "latitude": "31.3781",
+                    "longitude": "-55.4802"
+                },
+                "timezone": {
+                    "offset": "+3:30",
+                    "description": "Tehran"
+                }
+            },
+            "email": "demy.huijser@example.com",
+            "login": {
+                "uuid": "35921b4d-e03b-4cc4-8349-c14b4041edee",
+                "username": "brownmeercat786",
+                "password": "combat",
+                "salt": "3cmSXXrV",
+                "md5": "b623bfb1446cd8511de04f11029e82cd",
+                "sha1": "aea65bbf868a1bc2cb96f1651dc3c067c0489572",
+                "sha256": "f3b78fd2f17d8a7527ac202fa9bf4809f68f93471089ad593f96b35a35a12928"
+            },
+            "dob": {
+                "date": "1950-07-09T04:57:57.661Z",
+                "age": 73
+            },
+            "registered": {
+                "date": "2007-11-21T07:57:23.586Z",
+                "age": 15
+            },
+            "phone": "(0179) 726679",
+            "cell": "(06) 93744803",
+            "id": {
+                "name": "BSN",
+                "value": "99940038"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/72.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/72.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/72.jpg"
+            },
+            "nat": "NL"
+        }
+    ],
+    "info": {
+        "seed": "75c8ea526c6e4301",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    },
+    "requestedTime": "2023-07-30 14:15:08.606512"
+}
