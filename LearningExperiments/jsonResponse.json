@@ -64,3 +64,204 @@
         "version": "1.4"
     }
 }
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Eugen",
+                "last": "Wilk"
+            },
+            "location": {
+                "street": {
+                    "number": 8664,
+                    "name": "Rosenweg"
+                },
+                "city": "Hasbergen",
+                "state": "Sachsen",
+                "country": "Germany",
+                "postcode": 82188,
+                "coordinates": {
+                    "latitude": "-53.4374",
+                    "longitude": "-0.8752"
+                },
+                "timezone": {
+                    "offset": "+1:00",
+                    "description": "Brussels, Copenhagen, Madrid, Paris"
+                }
+            },
+            "email": "eugen.wilk@example.com",
+            "login": {
+                "uuid": "3f7dc5cc-d13a-48ba-af63-2bb939544812",
+                "username": "happydog251",
+                "password": "wildcats",
+                "salt": "YfmPHUPO",
+                "md5": "99333d47a2f5b026c688add372176368",
+                "sha1": "285fc1e62e6774a2430d9c0f84b38576c0b28f96",
+                "sha256": "72d2dbc2e8bff77ecd33b90c8491942b22b3dabf4531c7616fb387d1932036e1"
+            },
+            "dob": {
+                "date": "1984-08-15T02:56:01.955Z",
+                "age": 38
+            },
+            "registered": {
+                "date": "2016-02-02T12:24:51.304Z",
+                "age": 7
+            },
+            "phone": "0263-2250140",
+            "cell": "0172-0232692",
+            "id": {
+                "name": "SVNR",
+                "value": "42 140884 W 496"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/60.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/60.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/60.jpg"
+            },
+            "nat": "DE"
+        }
+    ],
+    "info": {
+        "seed": "abd36e1ef836888e",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    },
+    "requestedTime": "2023-07-29 22:52:57.805172"
+}
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Annabelle",
+                "last": "Clarke"
+            },
+            "location": {
+                "street": {
+                    "number": 5995,
+                    "name": "Hereford Street"
+                },
+                "city": "Upper Hutt",
+                "state": "West Coast",
+                "country": "New Zealand",
+                "postcode": 21759,
+                "coordinates": {
+                    "latitude": "53.6575",
+                    "longitude": "119.8965"
+                },
+                "timezone": {
+                    "offset": "+5:30",
+                    "description": "Bombay, Calcutta, Madras, New Delhi"
+                }
+            },
+            "email": "annabelle.clarke@example.com",
+            "login": {
+                "uuid": "110b95df-2cfe-404c-a0ad-6f9d1ebef763",
+                "username": "tinykoala947",
+                "password": "nanook",
+                "salt": "V74crXya",
+                "md5": "23ff405857292c793b40885dbb290be6",
+                "sha1": "713b0b584cf044b6ad81b0f50b1ebe292a48dbed",
+                "sha256": "09478b54c48580648c6f5dc1ef6771107e8b4d735e7b329063e2bd7e87f9cea7"
+            },
+            "dob": {
+                "date": "1979-06-19T07:56:53.779Z",
+                "age": 44
+            },
+            "registered": {
+                "date": "2019-06-29T20:08:10.875Z",
+                "age": 4
+            },
+            "phone": "(878)-943-2046",
+            "cell": "(394)-320-9807",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/7.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/7.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/7.jpg"
+            },
+            "nat": "NZ"
+        }
+    ],
+    "info": {
+        "seed": "550f3360134ac0cb",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    },
+    "requestedTime": "2023-07-29 22:55:48.443884"
+}
+{
+    "results": [
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "\u00c1ngel",
+                "last": "Martin"
+            },
+            "location": {
+                "street": {
+                    "number": 124,
+                    "name": "Calle de La Almudena"
+                },
+                "city": "San Sebasti\u00e1n de Los Reyes",
+                "state": "Asturias",
+                "country": "Spain",
+                "postcode": 89802,
+                "coordinates": {
+                    "latitude": "-34.9436",
+                    "longitude": "-167.9668"
+                },
+                "timezone": {
+                    "offset": "+5:45",
+                    "description": "Kathmandu"
+                }
+            },
+            "email": "angel.martin@example.com",
+            "login": {
+                "uuid": "28b07c2e-eec7-4286-b733-080e9f295091",
+                "username": "brownelephant117",
+                "password": "jermaine",
+                "salt": "36YEiFxB",
+                "md5": "94b2491e00b31bd86dc4b2d4f1a9f559",
+                "sha1": "bd9f53fa9669c30059aa82dd8ce5e20c5f9c0f18",
+                "sha256": "ab4f465569f751f704782bb6a6a94ace3089c6c13bd6c7f52df70b6976fa0dd5"
+            },
+            "dob": {
+                "date": "1974-09-12T00:17:27.485Z",
+                "age": 48
+            },
+            "registered": {
+                "date": "2002-12-12T03:23:14.767Z",
+                "age": 20
+            },
+            "phone": "959-153-060",
+            "cell": "639-094-385",
+            "id": {
+                "name": "DNI",
+                "value": "18395166-Y"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/87.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/87.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/87.jpg"
+            },
+            "nat": "ES"
+        }
+    ],
+    "info": {
+        "seed": "6f25711f81ad0667",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    },
+    "requestedTime": "2023-07-29 22:56:48.651949"
+}

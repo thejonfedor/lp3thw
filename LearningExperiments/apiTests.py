@@ -16,33 +16,33 @@ response = requests.get("https://randomuser.me/api").text
 
 parsed = json.loads(response)
 
-# How to pretty print JSON in py
-# https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file
-# enrichJSON = json.
-jsonFormat = json.dumps(parsed, indent = 4)
-
-print(f"\n{parsed} \n")
-
-results = parsed['results']
-
-print(f"\n{results} \n ")
-
-resultsDict = results[0]
-
 timestamp = datetime.datetime.now()
 strTimestamp = str(timestamp)
 
-resultsDict.update([('requested',strTimestamp)])
+parsed.update([('requestedTime',strTimestamp)])
 
-print(f"\n{resultsDict} \n ")
+# How to pretty print JSON in py
+# https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file
+
+jsonFormat = json.dumps(parsed, indent = 4)
+
+with open('jsonResponse.json', 'a') as output:
+    output.write(f"\n{jsonFormat}")
+
+'''
+print(f"\nThis is PARSED\n{parsed} \n")
+
+results = parsed['results']
+
+print(f"\nTHIS IS ONLY 'RESULTS'\n{results} \n ")
+
+resultsDict = results[0]
+
+print(f"\nTHIS IS AN UPDATED 'RESULTS'\n{resultsDict} \n ")
 
 name = resultsDict['name']
 locationKeys = resultsDict['location'].keys()
 locationStreet = resultsDict['location']['street']
-'''
+
 print(f"\n{name} \n{locationStreet} \n  ")
 '''
-
-
-# with open('jsonResponse.json', 'w') as output:
-#     output.write(jsonFormat)
