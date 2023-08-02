@@ -31,10 +31,15 @@ strTimestamp = str(timestamp)
 
 resultsDict.update([('requestedTime',strTimestamp)])
 
+newUserDict = {}
+newUserDict.update([(userName,resultsDict)])
+
+print(f"\nHere's the new user\n{newUserDict}\n")
+
 # How to pretty print JSON in py
 # https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file
 
-jsonFormat = json.dumps(parsed, indent = 4)
+jsonFormat = json.dumps(newUserDict, indent = 4)
 
 with open('jsonResponse.json', 'w') as output:
     output.write(f"\n{jsonFormat}")
