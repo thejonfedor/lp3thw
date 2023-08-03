@@ -1,5 +1,178 @@
+
 {
-    "users" : {
-        
+    "blackpanda595": {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Vidar",
+            "last": "Kallevik"
+        },
+        "location": {
+            "street": {
+                "number": 1615,
+                "name": "Olafiagangen"
+            },
+            "city": "Sparbu",
+            "state": "M\u00f8re og Romsdal",
+            "country": "Norway",
+            "postcode": "1466",
+            "coordinates": {
+                "latitude": "39.2971",
+                "longitude": "-149.7397"
+            },
+            "timezone": {
+                "offset": "-1:00",
+                "description": "Azores, Cape Verde Islands"
+            }
+        },
+        "email": "vidar.kallevik@example.com",
+        "login": {
+            "uuid": "f662ac60-9f8a-4526-bc2b-8cd1baad1142",
+            "username": "blackpanda595",
+            "password": "rhino",
+            "salt": "K9FPwlxm",
+            "md5": "34acb9b3c8d705dd4524978adb570c9c",
+            "sha1": "7bc7de9ecd821952ab8471dd2e46a7e7f4a42492",
+            "sha256": "673bb25299bbb377db669a4fce497bbba4d49287e39712bfaf4ec5e8fef0fe96"
+        },
+        "dob": {
+            "date": "1989-01-30T00:43:22.901Z",
+            "age": 34
+        },
+        "registered": {
+            "date": "2019-09-11T16:55:33.465Z",
+            "age": 3
+        },
+        "phone": "76680121",
+        "cell": "41167062",
+        "id": {
+            "name": "FN",
+            "value": "30018919725"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/8.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/8.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/8.jpg"
+        },
+        "nat": "NO",
+        "requestedTime": "2023-08-03 10:59:24.403098"
+    }
+}
+{
+    "crazygoose130": {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Dean",
+            "last": "Wilson"
+        },
+        "location": {
+            "street": {
+                "number": 9562,
+                "name": "Royal Ln"
+            },
+            "city": "Kansas City",
+            "state": "Oregon",
+            "country": "United States",
+            "postcode": 50221,
+            "coordinates": {
+                "latitude": "85.0085",
+                "longitude": "-19.6731"
+            },
+            "timezone": {
+                "offset": "+9:00",
+                "description": "Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
+            }
+        },
+        "email": "dean.wilson@example.com",
+        "login": {
+            "uuid": "3fefb7b7-7f95-4bc2-a245-0ea51885c7b2",
+            "username": "crazygoose130",
+            "password": "benjamin",
+            "salt": "C8MtSVkj",
+            "md5": "c393f5cb08d616a4e17ecac9cacabd23",
+            "sha1": "53426bf8e3584b4e922261436792055ef24f1d2f",
+            "sha256": "3774e961adf4b44db61404523cd5e0ceba2bff30bf34d9490fb3219439f6f8d5"
+        },
+        "dob": {
+            "date": "1996-10-20T19:32:47.740Z",
+            "age": 26
+        },
+        "registered": {
+            "date": "2015-10-24T08:33:31.692Z",
+            "age": 7
+        },
+        "phone": "(255) 474-7178",
+        "cell": "(691) 981-0867",
+        "id": {
+            "name": "SSN",
+            "value": "890-14-1669"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/35.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/35.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/35.jpg"
+        },
+        "nat": "US",
+        "requestedTime": "2023-08-03 10:59:56.124145"
+    }
+}
+{
+    "brownostrich213": {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Sobibor",
+            "last": "Dovgoshiya"
+        },
+        "location": {
+            "street": {
+                "number": 5392,
+                "name": "Topoleva"
+            },
+            "city": "Krasnogorivka",
+            "state": "Luganska",
+            "country": "Ukraine",
+            "postcode": 45724,
+            "coordinates": {
+                "latitude": "77.6118",
+                "longitude": "-40.4380"
+            },
+            "timezone": {
+                "offset": "-6:00",
+                "description": "Central Time (US & Canada), Mexico City"
+            }
+        },
+        "email": "sobibor.dovgoshiya@example.com",
+        "login": {
+            "uuid": "d438e776-6fcd-4d40-9d4a-2da20ddbb250",
+            "username": "brownostrich213",
+            "password": "streets",
+            "salt": "y7V2ZsbM",
+            "md5": "179ca9d874fdd7c8a97f4c0ff268128d",
+            "sha1": "ebe0333011a0cabe7870b169fda382c08a59f12d",
+            "sha256": "1fa919011a0482000a83e8ab9b1baec8bea6e7e472d48214744eae7a86cf37f9"
+        },
+        "dob": {
+            "date": "1993-08-19T02:10:37.277Z",
+            "age": 29
+        },
+        "registered": {
+            "date": "2015-03-21T09:38:32.603Z",
+            "age": 8
+        },
+        "phone": "(066) W87-7130",
+        "cell": "(099) R95-6127",
+        "id": {
+            "name": "",
+            "value": null
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/16.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/16.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/16.jpg"
+        },
+        "nat": "UA",
+        "requestedTime": "2023-08-03 11:00:28.447092"
     }
 }

@@ -1,0 +1,60 @@
+
+{
+    "heavywolf791": {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Kadir",
+            "last": "\u00d6ztonga"
+        },
+        "location": {
+            "street": {
+                "number": 8308,
+                "name": "Ba\u011fdat Cd"
+            },
+            "city": "K\u0131r\u015fehir",
+            "state": "\u015eanl\u0131urfa",
+            "country": "Turkey",
+            "postcode": 12448,
+            "coordinates": {
+                "latitude": "72.0071",
+                "longitude": "-145.9214"
+            },
+            "timezone": {
+                "offset": "-10:00",
+                "description": "Hawaii"
+            }
+        },
+        "email": "kadir.oztonga@example.com",
+        "login": {
+            "uuid": "7f1dd7c0-85d6-4a3d-a07e-cc5b23dc8eaf",
+            "username": "heavywolf791",
+            "password": "1123",
+            "salt": "Gv1AQn2i",
+            "md5": "5c363942f0146635c2f01cd0de8d0136",
+            "sha1": "eda50da4ec145207e974ef478c502a4ef1722045",
+            "sha256": "6874d0ff3bde262062416bad0d5e6ae6c23a9ac6daccb0a0d230cb1736e3b55f"
+        },
+        "dob": {
+            "date": "1988-08-18T14:46:52.923Z",
+            "age": 34
+        },
+        "registered": {
+            "date": "2009-09-22T19:19:53.322Z",
+            "age": 13
+        },
+        "phone": "(118)-759-6958",
+        "cell": "(651)-117-1156",
+        "id": {
+            "name": "",
+            "value": null
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/73.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/73.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/73.jpg"
+        },
+        "nat": "TR",
+        "requestedTime": "2023-08-03 10:58:00.398016"
+    }
+}
