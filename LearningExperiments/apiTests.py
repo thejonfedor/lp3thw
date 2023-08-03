@@ -36,6 +36,18 @@ newUserDict.update([(userName,resultsDict)])
 
 print(f"\nHere's the new user\n{newUserDict}\n")
 
+with open('userBase.json','r') as oldFile:
+    strOldFile = str(oldFile)
+    readOldFile = json.loads(strOldFile)
+
+# -------------------------
+# This is where I left off
+# -------------------------
+
+print(f"\nreadOldFile is type {type(readOldFile)}\n")
+
+print(f"\nHere's the loaded file {readOldFile}\n")
+
 # How to pretty print JSON in py
 # https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file
 
