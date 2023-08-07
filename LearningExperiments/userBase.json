@@ -176,3 +176,62 @@
         "requestedTime": "2023-08-03 11:00:28.447092"
     }
 }
+{
+    "crazymouse713": {
+        "gender": "female",
+        "name": {
+            "title": "Madame",
+            "first": "Ivana",
+            "last": "Olivier"
+        },
+        "location": {
+            "street": {
+                "number": 9741,
+                "name": "Rue de la Baleine"
+            },
+            "city": "Essertines-sur-Rolle",
+            "state": "Appenzell Ausserrhoden",
+            "country": "Switzerland",
+            "postcode": 1816,
+            "coordinates": {
+                "latitude": "-55.7991",
+                "longitude": "154.6874"
+            },
+            "timezone": {
+                "offset": "-3:00",
+                "description": "Brazil, Buenos Aires, Georgetown"
+            }
+        },
+        "email": "ivana.olivier@example.com",
+        "login": {
+            "uuid": "7c25f941-9617-4187-9fa4-9a3b4a10498a",
+            "username": "crazymouse713",
+            "password": "pacino",
+            "salt": "AfDgICh7",
+            "md5": "59ce53be2221e3ad76a214d03b15b822",
+            "sha1": "d8bb7984de331b084d0f789b37705737fb2caf8b",
+            "sha256": "a7fa256ec1a748781ffffa998e23dae0b52272b54faa817dec5e619fb20c330d"
+        },
+        "dob": {
+            "date": "1955-12-31T21:07:03.165Z",
+            "age": 67
+        },
+        "registered": {
+            "date": "2016-04-29T05:26:33.848Z",
+            "age": 7
+        },
+        "phone": "075 265 68 70",
+        "cell": "079 307 80 26",
+        "id": {
+            "name": "AVS",
+            "value": "756.4888.6287.94"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/women/29.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/women/29.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/29.jpg"
+        },
+        "nat": "CH",
+        "requestedTime": "2023-08-06 21:28:57.239835"
+    }
+}

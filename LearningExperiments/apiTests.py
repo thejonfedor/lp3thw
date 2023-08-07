@@ -31,8 +31,16 @@ strTimestamp = str(timestamp)
 
 resultsDict.update([('requestedTime',strTimestamp)])
 
+print(f"\nHere's the userName dict\n{resultsDict}\n")
+
 newUserDict = {}
 newUserDict.update([(userName,resultsDict)])
+
+# -------------------------
+# This is where I left off
+# Here I NEED to try loading in the userBase.json file
+# as a dict and updating it as a dict vs trying to update it as a json file
+# -------------------------
 
 print(f"\nHere's the new user\n{newUserDict}\n")
 
@@ -45,11 +53,6 @@ with open('userBase.json', 'a') as output:
     output.write(f"\n{jsonFormat}")
 
 '''
-print(f"\nThis is PARSED\n{parsed} \n")
-
-print(f"\nTHIS IS ONLY 'RESULTS'\n{results} \n ")
-
-print(f"\nTHIS IS AN UPDATED 'RESULTS'\n{resultsDict} \n ")
 
 name = resultsDict['name']
 locationKeys = resultsDict['location'].keys()
