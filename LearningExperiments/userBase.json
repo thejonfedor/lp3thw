@@ -340,5 +340,62 @@
         },
         "nat": "IN",
         "requestedTime": "2023-08-07 23:42:53.564900"
+    },
+    "goldenfish897": {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Reinhart",
+            "last": "Just"
+        },
+        "location": {
+            "street": {
+                "number": 5491,
+                "name": "Lindenstra\u00dfe"
+            },
+            "city": "Annaberg",
+            "state": "Brandenburg",
+            "country": "Germany",
+            "postcode": 88842,
+            "coordinates": {
+                "latitude": "-51.1971",
+                "longitude": "-48.3197"
+            },
+            "timezone": {
+                "offset": "-5:00",
+                "description": "Eastern Time (US & Canada), Bogota, Lima"
+            }
+        },
+        "email": "reinhart.just@example.com",
+        "login": {
+            "uuid": "c648903e-4adf-40d4-9654-e8834405e16c",
+            "username": "goldenfish897",
+            "password": "hand",
+            "salt": "sNY8c1sZ",
+            "md5": "7700d8a67efc0ebe529dcbde6c4bd4d2",
+            "sha1": "97c9b6499dbbeb0b9a8758119deeb71d95307cfe",
+            "sha256": "acd378d358841457441bcc68d25ce91da6d77fe0853d37ac70dab3cf27b49495"
+        },
+        "dob": {
+            "date": "1976-05-25T15:34:38.941Z",
+            "age": 47
+        },
+        "registered": {
+            "date": "2013-03-08T19:57:22.395Z",
+            "age": 10
+        },
+        "phone": "0220-3804724",
+        "cell": "0173-8891200",
+        "id": {
+            "name": "SVNR",
+            "value": "52 250576 J 137"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/21.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/21.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/21.jpg"
+        },
+        "nat": "DE",
+        "requestedTime": "2023-08-08 15:17:13.728109"
     }
 }
