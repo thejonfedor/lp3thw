@@ -10,7 +10,7 @@
 import warnings
 warnings.filterwarnings("ignore")
 
-import requests, json, datetime
+import requests, json, datetime, os
 
 response = requests.get("https://randomuser.me/api").text
 
@@ -38,19 +38,28 @@ newUserDict.update([(userName,resultsDict)])
 
 print(f"\nHere's the new user\n{newUserDict}\n")
 
-with open('userBase.json', 'r') as output:
-    read = output.read()
-    print(f"\nHere's the read variable\n{read}\n")
-    existingUsers = json.loads(read)
-    print(f"existingUsers is type {type(existingUsers)}")
-    print(f"existingUsers has these keys {existingUsers.keys()}")
-    print(f"This is the username\n{userName}")
-    print(f"This is the resultsDict\n{resultsDict}")
-    existingUsers[userName] = resultsDict
+isEmpty = os.stat('userBase.json').st_size == 0
 
-print(f"\nHere's the existingUsers dictionary\n{existingUsers}\n")
+if isEmpty == True :
+    with open('userBase.json', 'w') as output:
+        jsonInput = json.dumps(newUserDict, indent = 4)
+        newUserDictStr = str(jsonInput)
+        output.write(newUserDictStr)
+else :
+    with open('userBase.json', 'r') as readMe:
+        read = readMe.read()
+        print(f"\nHere's the read variable\n{read}\n")
+        existingUsers = json.loads(read)
+    with open('userBase.json', 'w') as output:
+        print(f"existingUsers is type {type(existingUsers)}")
+        print(f"existingUsers has these keys {existingUsers.keys()}")
+        print(f"This is the new user's username\n{userName}")
+        print(f"This is the resultsDict\n{resultsDict}")
+        existingUsers[userName] = resultsDict
+        jsonInput = json.dumps(existingUsers, indent = 4)
+        output.write(jsonInput)
 
-print(f"existingUsers NOW has these keys {existingUsers.keys()}")
+print(f"\nexistingUsers NOW has these keys {existingUsers.keys()}")
 
 
 # -------------------------
