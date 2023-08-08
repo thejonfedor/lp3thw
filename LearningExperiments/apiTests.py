@@ -38,22 +38,34 @@ newUserDict.update([(userName,resultsDict)])
 
 print(f"\nHere's the new user\n{newUserDict}\n")
 
-with open('lp3thw/LearningExperiments/userBase.json', 'r') as output:
+with open('userBase.json', 'r') as output:
     read = output.read()
     print(f"\nHere's the read variable\n{read}\n")
     existingUsers = json.loads(read)
-    updatedUsers = existingUsers.update([userName,resultsDict])
+    print(f"existingUsers is type {type(existingUsers)}")
+    print(f"existingUsers has these keys {existingUsers.keys()}")
+    print(f"This is the username\n{userName}")
+    print(f"This is the resultsDict\n{resultsDict}")
+    existingUsers[userName] = resultsDict
 
-print(f"\nHere's the updatedUsers dictionary\n{updatedUsers}\n")
+print(f"\nHere's the existingUsers dictionary\n{existingUsers}\n")
 
+print(f"existingUsers NOW has these keys {existingUsers.keys()}")
+
+
+# -------------------------
+# This is where I left off
+# NOW I need to rewrite the part of this script that
+# writes the NEWLY updated dict back to the userBase.json file
+# -------------------------
 
 # How to pretty print JSON in py
 # https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file
 
-jsonFormat = json.dumps(newUserDict, indent = 4)
+# jsonFormat = json.dumps(newUserDict, indent = 4)
 
-with open('userBase.json', 'a') as output:
-    output.write(f"\n{jsonFormat}")
+# with open('userBase.json', 'a') as output:
+#     output.write(f"\n{jsonFormat}")
 
 '''
 

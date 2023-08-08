@@ -228,3 +228,62 @@
         "requestedTime": "2023-08-06 21:28:57.239835"
     }
 }
+{
+    "'brownpanda181'": {
+        "gender": "male",
+        "name": {
+            "title": "Mr",
+            "first": "Felix",
+            "last": "Petersen"
+        },
+        "location": {
+            "street": {
+                "number": 8135,
+                "name": "V\u00e6nget"
+            },
+            "city": "Vesterborg",
+            "state": "Hovedstaden",
+            "country": "Denmark",
+            "postcode": 52955,
+            "coordinates": {
+                "latitude": "-39.6317",
+                "longitude": "-161.6609"
+            },
+            "timezone": {
+                "offset": "-2:00",
+                "description": "Mid-Atlantic"
+            }
+        },
+        "email": "felix.petersen@example.com",
+        "login": {
+            "uuid": "4c6dfe47-412b-435d-ba3b-15f5ff66f2cd",
+            "username": "brownpanda181",
+            "password": "peter1",
+            "salt": "sekTmuZD",
+            "md5": "9484e1fe108dbfc55118a5a0647bd46c",
+            "sha1": "10130047b365eb90507efa4e46d136855bcc4f0c",
+            "sha256": "f200b6b0c886eaed563ee2b1cd1586386aef23ef2441c04a917fb99e71c7b933"
+        },
+        "dob": {
+            "date": "1965-09-05T13:07:06.337Z",
+            "age": 57
+        },
+        "registered": {
+            "date": "2021-04-27T23:00:16.856Z",
+            "age": 2
+        },
+        "phone": "99449178",
+        "cell": "17179220",
+        "id": {
+            "name": "CPR",
+            "value": "050965-4693"
+        },
+        "picture": {
+            "large": "https://randomuser.me/api/portraits/men/32.jpg",
+            "medium": "https://randomuser.me/api/portraits/med/men/32.jpg",
+            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/32.jpg"
+        },
+        "nat": "DK",
+        "requestedTime": "2023-08-07 21:22:00.939667"
+    }
+}
