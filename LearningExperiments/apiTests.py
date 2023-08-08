@@ -36,13 +36,16 @@ print(f"\nHere's the userName dict\n{resultsDict}\n")
 newUserDict = {}
 newUserDict.update([(userName,resultsDict)])
 
-# -------------------------
-# This is where I left off
-# Here I NEED to try loading in the userBase.json file
-# as a dict and updating it as a dict vs trying to update it as a json file
-# -------------------------
-
 print(f"\nHere's the new user\n{newUserDict}\n")
+
+with open('lp3thw/LearningExperiments/userBase.json', 'r') as output:
+    read = output.read()
+    print(f"\nHere's the read variable\n{read}\n")
+    existingUsers = json.loads(read)
+    updatedUsers = existingUsers.update([userName,resultsDict])
+
+print(f"\nHere's the updatedUsers dictionary\n{updatedUsers}\n")
+
 
 # How to pretty print JSON in py
 # https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file

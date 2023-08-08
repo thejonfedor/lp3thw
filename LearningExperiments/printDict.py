@@ -4,6 +4,7 @@ with open('userBase.json', 'r') as output:
     read = output.read()
     users = json.loads(read)
     keys = users.keys()
+    output.close()
 
 print(f"\nUsers is object type: {type(users)}")
 
