@@ -67,6 +67,12 @@ else : # else if the file is NOT empty
 # list updated keys - all the users
 print(f"\nexistingUsers NOW has these keys {existingUsers.keys()}")
 
+print(f"\nexistingUsers is this data type {type(existingUsers)}")
+
+for user in existingUsers:
+    print(f"\nHere are the values of the users: {user.values()}")
+
+
 # How to pretty print JSON in py
 # https://stackoverflow.com/questions/12943819/how-to-prettyprint-a-json-file
 
