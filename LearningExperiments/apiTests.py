@@ -70,7 +70,7 @@ print(f"\nexistingUsers NOW has these keys {existingUsers.keys()}")
 print(f"\nexistingUsers is this data type {type(existingUsers)}")
 
 for user in existingUsers:
-    print(f"\nHere are the values of the users: {user.values()}")
+    print(f"\n{user} is: {existingUsers[user]['gender']}")
 
 
 # How to pretty print JSON in py
