@@ -69,8 +69,18 @@ print(f"\nexistingUsers NOW has these keys {existingUsers.keys()}")
 
 print(f"\nexistingUsers is this data type {type(existingUsers)}")
 
+print(f"\nThere are {len(existingUsers.keys())} users in existingUsers")
+
+ages = []
+
 for user in existingUsers:
-    print(f"\n{user} is: {existingUsers[user]['gender']}")
+    print(f"\n{user} is: {existingUsers[user]['gender']} and is {existingUsers[user]['dob']['age']} years old.")
+    ageOfUser = existingUsers[user]['dob']['age']
+    ages.append(ageOfUser)
+
+# print(ages)
+print(f"\nThe oldest user is {max(ages)} years old")
+print(f"\nThe youngest user is {min(ages)} years old")
 
 
 # How to pretty print JSON in py
